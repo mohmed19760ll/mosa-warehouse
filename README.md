@@ -1,7 +1,72 @@
-# Data Warehouse and Analytics Project
+# 🏭 Mosa Data Warehouse
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀
+Welcome to my **Data Warehouse and Analytics Project** repository! 🚀
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+
+---
+
+## 🏗️ Data Architecture
+
+The project follows the **Medallion Architecture** with Bronze, Silver, and Gold layers:
+
+![Data Architecture](docs/data_architecture.png)
+
+1. **Bronze Layer**: Stores raw, unprocessed data ingested directly from source CRM and ERP CSV files.
+2. **Silver Layer**: Cleanses, standardizes, and resolves data quality issues from the Bronze layer.
+3. **Gold Layer**: Houses business-ready, analytics-friendly views modeled in a star schema for reporting.
+
+<details>
+<summary>📊 Additional diagrams (Data Flow, Integration, Model)</summary>
+
+**Data Flow**
+![Data Flow](docs/data_flow.png)
+
+**Data Integration**
+![Data Integration](docs/data_integration.png)
+
+**Data Model (Star Schema)**
+![Data Model](docs/data_model.png)
+
+</details>
+
+---
+
+## 📂 Repository Structure
+mosa-warehouse/
+│
+├── datasets/                # Raw CRM and ERP source CSV files
+│   ├── crm/
+│   └── erp/
+│
+├── docs/                    # Architecture diagrams and data catalog
+│   ├── data_architecture.png
+│   ├── data_flow.png
+│   ├── data_integration.png
+│   ├── data_model.png
+│   └── data_catalog.md
+│
+├── scripts/                  # SQL scripts for ETL and transformations
+│   ├── init_database.sql     # Creates database and schemas
+│   ├── bronze/                # Raw layer DDL and load procedures
+│   ├── silver/                # Cleansed layer DDL and load procedures
+│   └── gold/                  # Business-ready views (star schema)
+│
+├── tests/                    # Data quality validation scripts
+│
+├── LICENSE
+└── README.md
+
+---
+
+## 🚀 Getting Started
+
+1. Run `scripts/init_database.sql` to create the `DataWarehouse` database and the bronze/silver/gold schemas.
+2. Run the scripts in `scripts/bronze/` to load raw CRM and ERP data from `datasets/`.
+3. Run the scripts in `scripts/silver/` to cleanse and standardize the bronze data.
+4. Run the scripts in `scripts/gold/` to build the final business-ready views.
+5. Run the scripts in `tests/` to validate data quality across all layers.
+
+> 📖 See [docs/data_catalog.md](docs/data_catalog.md) for full column-level documentation of the Gold layer.
 
 ---
 
@@ -30,6 +95,14 @@ Develop SQL-based analytics to deliver detailed insights into:
 - **Sales Trends**
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **SQL Server** — data warehouse engine
+- **T-SQL** — ETL scripts, stored procedures, and views
+- **draw.io** — architecture and data model diagrams
 
 ---
 

@@ -32,6 +32,7 @@ The project follows the **Medallion Architecture** with Bronze, Silver, and Gold
 ---
 
 ## 📂 Repository Structure
+```
 mosa-warehouse/
 │
 ├── datasets/                # Raw CRM and ERP source CSV files
@@ -55,7 +56,7 @@ mosa-warehouse/
 │
 ├── LICENSE
 └── README.md
-
+```
 ---
 
 ## 🚀 Getting Started

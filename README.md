@@ -113,3 +113,6 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 ## About Me
 Hi there, I'm Mohamed Habib, a young programming enthusiast trying to make something of their life, InshaAllah I will succeed✌️.
+
+### Connect with me
+[![Substack](https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=substack&logoColor=white)](https://substack.com/@moha0ll)
